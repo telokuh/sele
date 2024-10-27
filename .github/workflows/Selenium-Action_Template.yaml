@@ -24,4 +24,4 @@ jobs:
 
       - name: Running the Python script
         #run: python Selenium-Template.py
-        run: main.py
+        run: python main.py
