@@ -40,7 +40,7 @@ for option in options:
 driver = webdriver.Chrome(options = chrome_options)
 
 driver.get('https://samehadaku.email/shangri-la-frontier-season-2-episode-3/')
-wait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'iframe[allowfullscreen=true]')))
+wait(driver, 11).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'iframe[allowfullscreen=true]')))
 #print(driver.page_source)
 soup = BeautifulSoup(driver.page_source, "html.parser")
 res = soup.find(allowfullscreen="true")
