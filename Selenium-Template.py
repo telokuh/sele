@@ -46,6 +46,6 @@ soup = BeautifulSoup(driver.page_source, "html.parser")
 res = soup.find(allowfullscreen="true")
 #display(HTML(res.prettify()))
 
-with open('./GitHub_Action_Results.txt', 'w') as f:
+with open('./index.html', 'w') as f:
     f.write(f"This was written with a GitHub action {res.prettify()}")
 
