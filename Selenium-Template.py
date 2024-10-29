@@ -44,7 +44,7 @@ wait(driver, 11).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'iframe[
 #print(driver.page_source)
 soup = BeautifulSoup(driver.page_source, "html.parser")
 res = soup.find(allowfullscreen="true")
-display(HTML(res.prettify()))
+#display(HTML(res.prettify()))
 
 with open('./GitHub_Action_Results.txt', 'w') as f:
     f.write(f"This was written with a GitHub action {res.prettify()}")
